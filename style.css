@@ -1,0 +1,170 @@
+/* General Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* Page Background */
+body {
+font-family: Arial, sans-serif;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #74ebd5, #9face6);
+padding: 20px;
+}
+
+/* Main Container */
+.weather-container {
+width: 100%;
+max-width: 500px;
+padding: 35px 25px;
+background: rgba(255, 255, 255, 0.95);
+border-radius: 25px;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+
+/* Heading */
+h1 {
+color: #283593;
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.subtitle {
+color: #666;
+margin-bottom: 25px;
+font-size: 15px;
+}
+
+/* Search Section */
+.search-box {
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.search-box input {
+flex: 1;
+min-width: 0;
+padding: 13px;
+border: 2px solid #dce1f0;
+border-radius: 12px;
+outline: none;
+font-size: 15px;
+}
+
+.search-box input:focus {
+border-color: #5c6bc0;
+}
+
+.search-box button {
+padding: 13px 16px;
+border: none;
+border-radius: 12px;
+background: #3949ab;
+color: white;
+font-size: 14px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.search-box button:hover {
+background: #283593;
+}
+
+/* Error Message */
+.error-message {
+color: #d32f2f;
+font-size: 14px;
+margin-bottom: 15px;
+}
+
+/* Weather Information */
+.weather-info {
+padding-top: 10px;
+}
+
+#city-name {
+color: #283593;
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.weather-icon {
+font-size: 65px;
+margin: 10px 0;
+}
+
+#temperature {
+font-size: 45px;
+color: #222;
+margin: 10px 0;
+}
+
+#weather-description {
+color: #666;
+font-size: 17px;
+text-transform: capitalize;
+margin-bottom: 25px;
+}
+
+/* Weather Detail Cards */
+.weather-details {
+display: flex;
+gap: 15px;
+margin-top: 20px;
+}
+
+.weather-card {
+flex: 1;
+padding: 20px 10px;
+background: #f0f3ff;
+border-radius: 16px;
+transition: transform 0.3s;
+}
+
+.weather-card:hover {
+transform: translateY(-5px);
+}
+
+.weather-card span {
+font-size: 28px;
+}
+
+.weather-card p {
+color: #666;
+font-size: 14px;
+margin: 10px 0;
+}
+
+.weather-card h3 {
+color: #283593;
+font-size: 19px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 400px) {
+.weather-container {
+padding: 25px 15px;
+}
+
+```
+h1 {
+    font-size: 23px;
+}
+
+.search-box {
+    flex-direction: column;
+}
+
+.search-box button {
+    width: 100%;
+}
+```
+
+}

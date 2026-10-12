@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+```
+<!-- CSS File -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+```
+<div class="weather-container">
+
+    <h1>🌦️ Weather Dashboard</h1>
+    <p class="subtitle">Check the weather in your city</p>
+
+    <!-- Search Section -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name..."
+        >
+
+        <button id="search-btn">Search 🔍</button>
+    </div>
+
+    <!-- Error Message -->
+    <p id="error-message" class="error-message"></p>
+
+    <!-- Weather Information -->
+    <div id="weather-info" class="weather-info">
+
+        <h2 id="city-name">Chennai</h2>
+
+        <div class="weather-icon" id="weather-icon">🌤️</div>
+
+        <h3 id="temperature">--°C</h3>
+
+        <p id="weather-description">Search for a city</p>
+
+        <!-- Weather Details -->
+        <div class="weather-details">
+
+            <div class="weather-card">
+                <span>💧</span>
+                <p>Humidity</p>
+                <h3 id="humidity">--%</h3>
+            </div>
+
+            <div class="weather-card">
+                <span>💨</span>
+                <p>Wind Speed</p>
+                <h3 id="wind-speed">-- m/s</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+```
+
+</body>
+</html>
